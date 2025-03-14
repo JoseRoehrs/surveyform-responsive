@@ -5,37 +5,50 @@ body {
     background-color: #1b1b32;
     color: #f5f6f7;
     font-family: Tahoma;
-    font-size: 16px
-  }
+    font-size: 16px;
+    background: url('src/img/img.jpg');
+    background-attachment: fixed;
+    font-weight: bold;
+}
 
   a{
     color: #f5f6f7;
+    text-decoration-thickness: 3px;
   }
   
   label {
     display: block;
     margin: 0.5rem 0;
+
   }
   
   h1, p{
     text-align: center;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
   
   form{
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
-    margin: 0px auto;
-    padding: 75px;
+    margin: 2% auto;
+    padding: 10px 70px;
     padding-bottom: 2em;
     border: 2px solid white;
-    border-radius: 10px
+    border-radius: 10px;
+    text-shadow: -1px -1px 0 black,  
+                 1px -1px 0 black,
+                 -1px 1px 0 black,  
+                 1px 1px 0 black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
   
   fieldset{
     border: none;
     padding: 2rem 0;
-    border-bottom: 2px solid #3b3b4f;
+    border-bottom: 2px solid white;
   }
   
   fieldset:last-of-type{
@@ -51,10 +64,14 @@ body {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
-    background-color: #3b3b4f;
-    border: 1px solid #3b3b4f;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
     color: white;
     border-radius: 10px
+    }
+    input::placeholder, textarea::placeholder, select::placeholder{
+      color: white;
     }
   
   .inline{
@@ -69,8 +86,6 @@ body {
     margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
-    background-color: #3b3b4f;
-    border-color: white;
     min-width: 300px;
   }
   
