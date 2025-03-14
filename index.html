@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang "us">
+<head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<title>Formulário</title>
+
+</head>
+<body>
+    <h1 id="title">Questionario YOUR LIFE</h1>
+    <p id="description">Olá! Esta pesquisa tem como objetivo coletar dados para entender melhor a situação da nossa população.</p>
+    <form id="survey-form" method="post" action="/">
+        <fieldset>
+            <label id="name-label" for="name">Digite seu nome: <input id="name" type="text" placeholder="ex: jose" required/></label>
+            <label id="email-label" for="email">Digite seu email: <input id="email" type="email" placeholder="ex: jose@email.com"required/></label>
+            <label id="number-label" for="number">Digite sua idade (anos): <input id="number" type="number" min="13" max="120" placeholder="your age" required/></label>
+            <label for="dropdown">Qual a sua etnia?
+            <select id="dropdown">
+                <option value="">(Selecione)</option>
+                <option value="1">Branca</option>
+                <option value="2">Parda</option>
+                <option value="3">Negra</option>
+            </select>
+            </label>
+            </fieldset>
+            <fieldset>
+                <legend>Você possui filhos?</legend>
+            <label for="boolean-yes"><input id="boolean-yes" type="radio" class="inline"/ name="sim-nao" value="1"> Sim</label>
+            <label for="boolean-no"><input id="boolean-no" type="radio"/ name="sim-nao" value="2" class="inline" checked> Não</label>
+        </fieldset>
+        <fieldset>
+            <legend>Liste todas as proprietades das quais você possui:</legend>
+            <label for="carro"><input type="checkbox" value="carro" class="inline"/>Carro</label>
+            <label for="moto"><input type="checkbox" value="moto" class="inline"/>Moto</label>
+            <label for="casa"><input type="checkbox" value="casa" class="inline"/>Casa Propria</label>
+            <label for="empresa"><input type="checkbox" value="empresa" class="inline"/>Empresa</label>
+        </fieldset>
+        <fieldset>
+            <legend>Conte-me hobbies que você possui: </legend>
+            <textarea></textarea>
+        </fieldset>
+         <label for="terms-and-conditions">
+        <input id="terms-and-conditions" type="checkbox" value="term" class="inline" required /> I accept the <a href="/">terms and conditions</a>
+      </label>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+</body>
+</html>
+
